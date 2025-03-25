@@ -32,7 +32,3 @@ data "aws_subnet" "private_subnet_2" {
   vpc_id     = data.aws_vpc.main.id
   cidr_block = "10.0.4.0/24"
 }
-
-data "aws_lambda_function" "authorizer" {
-  function_name = "authorizer"
-}
